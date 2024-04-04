@@ -24,13 +24,13 @@ To complete the preprocessing, followed these steps:
 1. Read in the charity_data.csv to a Pandas DataFrame, and be sure to identify the following in your dataset:
    - What variable(s) are the target(s) for your model?
    - What variable(s) are the feature(s) for your model?
-2. Drop the EIN and NAME columns.
+2. Drop the _EIN_ and _NAME_ columns.
 3. Determine the number of unique values for each column.
 4. For columns that have more than 10 unique values, determine the number of data points for each unique value.
 5. Use the number of data points for each unique value to pick a cutoff point to bin "rare" categorical variables together in a new value, Other, and then check if the binning was successful.
-6. Use pd.get_dummies() to encode categorical variables.
-7. Split the preprocessed data into a features array, X, and a target array, y. Use these arrays and the train_test_split function to split the data into training and testing datasets.
-8. Scale the training and testing features datasets by creating a StandardScaler instance, fitting it to the training data, then using the transform function.
+6. Use _pd.get_dummies()_ to encode categorical variables.
+7. Split the preprocessed data into a features array, _X_, and a target array, _y_. Use these arrays and the _train_test_split_ function to split the data into training and testing datasets.
+8. Scale the training and testing features datasets by creating a _StandardScaler_ instance, fitting it to the training data, then using the _transform_ function.
 
 #### Step 2: Compile, Train, and Evaluate the Model
 Using TensorFlow, I designed a neural network, or deep learning model, to create a binary classification model that can predict if an Alphabet Soup–funded organization will be successful based on the features in the dataset. I compiled, trained, and evaluated my binary classification model to calculate the model’s loss and accuracy.
